@@ -4,7 +4,9 @@ A sample CRUD admin using Angular, Express (for REST API) & Angular Material com
 
 ## Setup
 
-Run `npm i` to install the needed packages.
+Run `npm i` in the root to install the needed packages.
+
+Run `npm i` in the client\CRUDdyClient folder to install the needed packages.
 
 ## Development server
 
