@@ -1,0 +1,23 @@
+{
+  "name": "cruddyproducts",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "Sample app, please don't consider this a real store.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently --kill-others \"cd client\\CRUDdyClient && ng serve\" \"nodemon server/index.js\" "
+  },
+  "author": "chris bitting",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^2.0.0",
+    "lowdb": "^2.1.0",
+    "uuid": "^8.3.2"
+  }
+}

@@ -1,0 +1,75 @@
+<div>
+  <h1>Add / Edit Product</h1>
+  <form
+    [formGroup]="productForm"
+    class="productForm"
+    (ngSubmit)="submitForm()"
+    novalidate
+  >
+    <input type="hidden" formControlName="id" class="form-control" />
+
+    <mat-form-field class="productForm-full-width">
+      <mat-label>Name</mat-label>
+      <input
+        matInput
+        formControlName="name"
+        [errorStateMatcher]="matcher"
+        class="form-control"
+      />
+      <mat-error *ngIf="checkError('name', 'required')"
+        >Product Name is required</mat-error
+      >
+      <mat-error *ngIf="checkError('name', 'minlength')"
+        >Product Name should be more than 2 characters</mat-error
+      >
+      <mat-error *ngIf="checkError('name', 'maxlength')"
+        >Product Name should be less than 100 characters</mat-error
+      >
+    </mat-form-field>
+
+    <mat-form-field class="productForm-full-width">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="descrip"></textarea>
+      <mat-error *ngIf="checkError('descrip', 'required')"
+        >Description is required</mat-error
+      >
+      <mat-error *ngIf="checkError('descrip', 'minlength')"
+        >Description should be more than 4 characters</mat-error
+      >
+      <mat-error *ngIf="checkError('descrip', 'maxlength')"
+        >Description should be less than 1000 characters</mat-error
+      >
+    </mat-form-field>
+
+    <mat-form-field class="productForm-full-width">
+      <mat-label>Price</mat-label>
+      <input type="number" matInput formControlName="price" />
+      <mat-error *ngIf="checkError('price', 'required')"
+        >Price is required</mat-error
+      >
+      <mat-error *ngIf="checkError('price', 'min')"
+        >Price should be $1 or more.</mat-error
+      >
+      <mat-error *ngIf="checkError('price', 'max')"
+        >Price can not be more than $20,000</mat-error
+      >
+    </mat-form-field>
+
+    <button
+      mat-raised-button
+      color="primary"
+      [disabled]="!productForm.valid"
+      type="submit"
+    >
+      Add / Update
+    </button>
+    <button
+      mat-raised-button
+      color="warn"
+      (click)="deleteProduct(id)"
+      aria-label="Delete"
+    >
+      Delete
+    </button>
+  </form>
+</div>

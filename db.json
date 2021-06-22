@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": "cb85a7b8-6def-4f94-bb0d-9b6b4e132df5",
+      "name": "Banana Slicer",
+      "descrip": "So easy and fast!",
+      "price": 100,
+      "archived": false
+    },
+    {
+      "id": "57c7fc0b-5d0b-4b36-934d-b4ed45c7b6b9",
+      "name": "300 Function Swiss Army Knife",
+      "descrip": "Literally has everything you need.",
+      "price": 199.99,
+      "archived": false
+    },
+    {
+      "id": "f4f33468-fa5f-4429-8fa2-cd9802966133",
+      "name": "Red Copper Pan",
+      "descrip": "Never sticks - just like my diet. Mama Cathy uses it.",
+      "price": 1,
+      "archived": false
+    },
+    {
+      "name": "Pumpkin Spice Dr. Pepper",
+      "descrip": "You know you'll try it, even though it's awful.",
+      "price": 39.99,
+      "id": "8119a4f8-8d65-46dc-92a6-5fc438001ee7",
+      "archived": false
+    },
+    {
+      "name": "Microsoft Zune",
+      "descrip": "It's like the iPod, only bigger!",
+      "price": 199.99,
+      "id": "eb914c29-21f9-4c1a-96f3-e39739684e9d",
+      "archived": true
+    }
+  ]
+}
