@@ -49,7 +49,7 @@ export class ProductdataService {
 
   public getProduct(id: string) {
     return this.httpClient
-      .get<Product[]>('/api/product/' + id, { observe: 'response' })
+      .get<Product[]>('/api/products/product/' + id, { observe: 'response' })
       .pipe(
         retry(3),
         catchError(this.handleError),
@@ -66,7 +66,7 @@ export class ProductdataService {
     });
 
     return this.httpClient
-      .post<Product[]>('/api/product', product, {
+      .post<Product[]>('/api/products', product, {
         observe: 'response',
         headers: headers as any,
       })
@@ -87,7 +87,7 @@ export class ProductdataService {
     });
 
     return this.httpClient
-      .put<Product[]>('/api/product', product, {
+      .put<Product[]>('/api/products', product, {
         observe: 'response',
         headers: headers as any,
       })
@@ -107,7 +107,7 @@ export class ProductdataService {
     });
 
     return this.httpClient
-      .delete<Product[]>('/api/product/' + id, {
+      .delete<Product[]>('/api/products/' + id, {
         observe: 'response',
         headers: headers as any,
       })

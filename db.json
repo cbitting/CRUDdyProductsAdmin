@@ -4,7 +4,7 @@
       "id": "cb85a7b8-6def-4f94-bb0d-9b6b4e132df5",
       "name": "Banana Slicer",
       "descrip": "So easy and fast!",
-      "price": 100,
+      "price": 49.99,
       "archived": false
     },
     {
@@ -33,6 +33,20 @@
       "descrip": "It's like the iPod, only bigger!",
       "price": 199.99,
       "id": "eb914c29-21f9-4c1a-96f3-e39739684e9d",
+      "archived": true
+    },
+    {
+      "name": "Riding Weed Wacker",
+      "descrip": "Like a riding mower, but it's a weed eater.",
+      "price": 499.99,
+      "id": "af689b0d-8d47-47a2-ac0c-ad8d01c71b47",
+      "archived": false
+    },
+    {
+      "name": "Sample Product",
+      "descrip": "This sample product will change your life.",
+      "price": 50,
+      "id": "643ad598-f886-491b-b5a4-5789a431724c",
       "archived": true
     }
   ]
